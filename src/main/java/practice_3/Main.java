@@ -98,46 +98,46 @@ public class Main {
         // создали переменную
         // присвоили переменной экземпляр класса Студент
         // вызвав дефолтный конструктор
-//
-//        System.out.println(Student.studentCount);
-//
-//        Student petya = new Student(18,"petya");
-//
-//        System.out.println(Student.studentCount);
-//
-//        Student kolya = new Student(20, "kolya");
-//
-//        System.out.println(Student.studentCount);
-//
-//        Company emp1 = new Company(101, "Vania");
-//        Company emp2 = new Company(102, "Artem");
-//
-//        Company.printCompanyName();
-//
-//        emp1.printEmployeeInfo();
-//        emp2.printEmployeeInfo();
-//
-//        Company.companyName = "Disney";
-//
-//        emp1.printEmployeeInfo();
-//        emp2.printEmployeeInfo();
-//
-//        Library book1 = new Library("The Adventures of Tom Sawyer", "Mark Twain", 2020, "Adventures");
-//;
-//        String author1 = book1.author;
-//        int year1 = book1.year;
-//        String category1 = book1.category;
-//
-//        String bookTitle1 = book1.getBookTitle();
-//
-//        System.out.println(author1);
-//        System.out.println(year1);
-//        System.out.println(category1);
-//
-//        System.out.println(bookTitle1);
-//
-//        book1.setBookTitle("Dune");
-//        System.out.println(book1.getBookTitle() );
+
+        System.out.println(Student.studentCount);
+
+        Student petya = new Student(18,"petya");
+
+        System.out.println(Student.studentCount);
+
+        Student kolya = new Student(20, "kolya");
+
+        System.out.println(Student.studentCount);
+
+        Company emp1 = new Company(101, "Vania");
+        Company emp2 = new Company(102, "Artem");
+
+        Company.printCompanyName();
+
+        emp1.printEmployeeInfo();
+        emp2.printEmployeeInfo();
+
+        Company.companyName = "Disney";
+
+        emp1.printEmployeeInfo();
+        emp2.printEmployeeInfo();
+
+        Library book1 = new Library("The Adventures of Tom Sawyer", "Mark Twain", 2020, "Adventures");
+;
+        String author1 = book1.author;
+        int year1 = book1.year;
+        String category1 = book1.category;
+
+        String bookTitle1 = book1.getBookTitle();
+
+        System.out.println(author1);
+        System.out.println(year1);
+        System.out.println(category1);
+
+        System.out.println(bookTitle1);
+
+        book1.setBookTitle("Dune");
+        System.out.println(book1.getBookTitle() );
 
         Person person1 = new Person("Ivan", "Ivanov", "123-45-6789");
         Person person2 = new Person("Petr", "Petrov", "987-65-4321");
