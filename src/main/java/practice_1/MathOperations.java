@@ -80,9 +80,9 @@ public class MathOperations {
         System.out.println("Quotient of numbers: " + div1);
 
         int max1 = findMax(35, -50);
-        System.out.println("Maximum of numbers a and b: " + max1);
+        System.out.println("Maximum of numbers " + max1);
 
-        int dif1 = difference(600, 20);
+        int dif1 = difference(-5, -20);
         System.out.println("Difference of numbers x and y: " + dif1);
 
         int square = squareArea(5);
@@ -90,7 +90,7 @@ public class MathOperations {
         System.out.println("Square area: " + square);
         System.out.println("Perimeter area: " + perimeter);
 
-        int seconds = 90;
+        int seconds = 91;
         System.out.println("There are " + convertSecondsToMinutes(seconds) + " minutes " + "in " + seconds + " seconds");
 
         double averageSpeed1 = averageSpeed(1000, 6);
@@ -134,7 +134,7 @@ public class MathOperations {
     }
 
     public static int difference(int x, int y) {
-        return x - y;
+        return Math.abs(x - y);
     }
 
     public static int squareArea(int side) {
@@ -146,7 +146,7 @@ public class MathOperations {
     }
 
     public static double convertSecondsToMinutes(int seconds) {
-        return (double) seconds / 60;
+        return seconds / 60.0;
     }
 
     public static double averageSpeed(double distance, double time) {

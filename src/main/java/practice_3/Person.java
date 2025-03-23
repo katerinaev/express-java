@@ -5,33 +5,33 @@ public class Person {
     private String lastName;
     private final String ssn;
 
-    public Person(String firstName, String lastName, String ssn) {
+    Person(String firstName, String lastName, String ssn) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.ssn = ssn;
     }
 
-    public String getFirstName() {
+    String getFirstName() {
         return this.firstName;
     }
 
-    public String getLastName() {
+    String getLastName() {
         return this.lastName;
     }
 
-    public String getSsn() {
+    String getSsn() {
         return this.ssn;
     }
 
-    public void setFirstName(String newFirstName) {
+    void setFirstName(String newFirstName) {
         this.firstName = newFirstName;
     }
 
-    public void setLastName(String newLastName) {
+    void setLastName(String newLastName) {
         this.lastName = newLastName;
     }
 
-    public void printPersonInfo() {
+    void printPersonInfo() {
         System.out.println("First Name: " + firstName + ", LastName: " + lastName +
                 ", SSN: " + ssn);
     }
