@@ -109,6 +109,7 @@ public class Main {
 
         System.out.println(Student.studentCount);
 
+        // 1
         Company emp1 = new Company(101, "Vania");
         Company emp2 = new Company(102, "Artem");
 
@@ -119,17 +120,31 @@ public class Main {
 
         Company.companyName = "Disney";
 
+        Company.printCompanyName();
         emp1.printEmployeeInfo();
         emp2.printEmployeeInfo();
 
+//        emp1.employeeID = 105;
+
+        // Задача 2
+        double radius1 = 5.0;
+        double radius2 = 10.0;
+
+        System.out.println("Circle area with radius " + radius1 + ": " + MathConstants.circleArea(radius1));
+        System.out.println("Circumference with radius " + radius1 + ": " + MathConstants.circumference(radius1));
+
+        System.out.println("Circle area with radius " + radius2 + ": " + MathConstants.circleArea(radius2));
+        System.out.println("Circumference with radius " + radius2 + ": " + MathConstants.circumference(radius2));
+
+        // 3
         Library book1 = new Library("The Adventures of Tom Sawyer", "Mark Twain", 2020, "Adventures");
-;
+
         String author1 = book1.author;
         int year1 = book1.year;
         String category1 = book1.category;
 
         String bookTitle1 = book1.getBookTitle();
-
+        book1.setBookTitle("Dune");
         System.out.println(author1);
         System.out.println(year1);
         System.out.println(category1);
@@ -139,6 +154,37 @@ public class Main {
         book1.setBookTitle("Dune");
         System.out.println(book1.getBookTitle() );
 
+        // 4
+        University stud1 = new University(1010, "Van Gogh");
+        University stud2 = new University(1011, "Paul Gauguin");
+        University stud3 = new University(1012, "Claude Monet");
+
+        stud1.printStudentInfo();
+        stud2.printStudentInfo();
+        stud3.printStudentInfo();
+
+        University.changeUniversityName("Paris College of Art");
+
+        stud1.printStudentInfo();
+        stud2.printStudentInfo();
+        stud3.printStudentInfo();
+
+        // 5
+        GameSettings game1 = new GameSettings("Carcassonne", 2);
+        GameSettings game2 = new GameSettings("Ticket to ride", 3);
+
+        game1.printGameStatus();
+        game2.printGameStatus();
+
+        GameSettings.setMaxPlayers(5);
+
+        game1.addPlayer();
+        game2.addPlayer();
+
+        game1.printGameStatus();
+        game2.printGameStatus();
+
+        // 6
         Person person1 = new Person("Ivan", "Ivanov", "123-45-6789");
         Person person2 = new Person("Petr", "Petrov", "987-65-4321");
 

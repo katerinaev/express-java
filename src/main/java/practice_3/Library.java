@@ -1,47 +1,47 @@
 package practice_3;
 
 public class Library {
-    private String bookTitle;
-    protected String author;
-    int year;
+    public String bookTitle;
+    public String author;
+    public int year;
     public String category;
 
-    Library(String bookTitle, String author, int year, String category) {
+    public Library(String bookTitle, String author, int year, String category) {
         this.bookTitle = bookTitle;
         this.author = author;
         this.year = year;
         this.category = category;
     }
 
-    public String getBookTitle() {
+    String getBookTitle() {
         return this.bookTitle;
     }
 
-    public void setBookTitle(String newBookTitle) {
+    void setBookTitle(String newBookTitle) {
         this.bookTitle = newBookTitle;
     }
 
-    public String getAuthor() {
+    String getAuthor() {
         return this.author;
     }
 
-    public void setAuthor(String newAuthor) {
+    void setAuthor(String newAuthor) {
         this.author = newAuthor;
     }
 
-    public int getYear() {
+    int getYear() {
         return this.year;
     }
 
-    public void setYear(int newYear) {
+    void setYear(int newYear) {
         this.year = newYear;
     }
 
-    public String getCategory() {
+    String getCategory() {
         return this.category;
     }
 
-    public void setCategory(String newCategory) {
+    void setCategory(String newCategory) {
         this.category = newCategory;
     }
 }

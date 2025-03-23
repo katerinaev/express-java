@@ -4,7 +4,7 @@ public class Company {
     static String companyName = "Universe";
 
     final int employeeID;
-    private String employeeName;
+    String employeeName;
 
    Company(int employeeID, String employeeName) {
         this.employeeID = employeeID;

@@ -120,7 +120,7 @@ double price (цена).
 "Ноутбук: Lenovo, Цена: 70000.0 руб.".
 В методе main измените цену через сеттер и выведите обновлённую информацию.
  */
-public class Main {
+public class    Main {
     public static void main(String[] args) {
         // проверка конструктора по умолчанию
         Student petya = new Student(18, "Петя");

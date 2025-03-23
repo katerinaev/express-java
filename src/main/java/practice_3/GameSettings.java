@@ -10,36 +10,18 @@ public class GameSettings {
         this.currentPlayers = currentPlayers;
     }
 
-    public static void setMaxPlayers(int newMax) {
+    static void setMaxPlayers(int newMax) {
         maxPlayers = newMax;
     }
 
-    public void addPlayer() {
+    void addPlayer() {
         if (currentPlayers < maxPlayers) {
             currentPlayers ++;
         }
     }
 
-    public void printGameStatus() {
+    void printGameStatus() {
         System.out.println("Game name: " + gameName + ", Current players: " +
                 currentPlayers + ", Max players: " + maxPlayers);
     }
-
-    public static void main(String[] args) {
-        GameSettings game1 = new GameSettings("Carcassonne", 2);
-        GameSettings game2 = new GameSettings("Ticket to ride", 3);
-
-        game1.printGameStatus();
-        game2.printGameStatus();
-
-        setMaxPlayers(5);
-
-        game1.addPlayer();
-        game2.addPlayer();
-
-        game1.printGameStatus();
-        game2.printGameStatus();
-    }
-
-
 }
