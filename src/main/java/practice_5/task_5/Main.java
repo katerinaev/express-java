@@ -2,14 +2,17 @@ package practice_5.task_5;
 
 public class Main {
     public static void main(String[] args) {
-        Dish dish = new Dish("Caesar salad", 25.0);
-        Dish soup = new HotDish("Harcho", 15.0);
-        Dish smuzi = new Drink("Smuzi", 7.0);
+        Dish salad = new Dish("Caesar salad");
+        Dish soup = new HotDish("Harcho", 65);
+        Dish smuzi = new Drink("Smuzi", 250);
 
-        Administrator igor = new Administrator();
+        Menu menu = new Menu();
 
-        igor.administer(dish);
-        igor.administer(soup);
-        igor.administer(smuzi);
+        menu.setDish(salad);
+        menu.printDish();
+        menu.setDish(soup);
+        menu.printDish();
+        menu.setDish(smuzi);
+        menu.printDish();
     }
 }

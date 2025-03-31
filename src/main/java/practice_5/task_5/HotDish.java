@@ -1,20 +1,19 @@
 package practice_5.task_5;
 
 public class HotDish extends Dish {
-    private double temperature;
+    private int temperature;
 
-    public HotDish(String name, double price) {
-        super(name, price);
+    public HotDish(String name, int temperature) {
+        super(name);
         this.temperature = temperature;
     }
 
-    public double getTemperature() {
+    public int getTemperature() {
         return temperature;
     }
 
     @Override
-    public void print() {
-        super.print();
-        System.out.println(", temperature " + this.temperature);
+    public String getDescription() {
+        return super.getDescription() + ", temperature " + getTemperature();
     }
 }

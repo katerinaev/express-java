@@ -1,20 +1,19 @@
 package practice_5.task_5;
 
 public class Drink extends Dish {
-    private double volume;
+    private int volume;
 
-    public Drink(String name, double price) {
-        super(name, price);
+    public Drink(String name, int volume) {
+        super(name);
         this.volume = volume;
     }
 
-    public double getVolume() {
+    public int getVolume() {
         return volume;
     }
 
     @Override
-    public void print() {
-        super.print();
-        System.out.println(", volume " + this.volume);
+    public String getDescription() {
+        return super.getDescription() + ", volume " + getVolume() + " ml";
     }
 }
