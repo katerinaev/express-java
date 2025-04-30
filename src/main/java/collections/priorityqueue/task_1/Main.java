@@ -1,7 +1,5 @@
 package collections.priorityqueue.task_1;
 
-import com.sun.security.jgss.GSSUtil;
-
 import java.util.PriorityQueue;
 
 /**
@@ -15,16 +13,16 @@ import java.util.PriorityQueue;
  */
 public class Main {
     public static void main(String[] args) {
-        PriorityQueue<Integer> queue  = new PriorityQueue<>();
-        queue.offer(4);
-        queue.offer(8);
-        queue.offer(10);
-        queue.offer(1);
-        queue.offer(3);
-
+        PriorityQueue<Integer> numbers  = new PriorityQueue<>();
+        numbers.offer(4);
+        numbers.offer(8);
+        numbers.offer(10);
+        numbers.offer(1);
+        numbers.offer(3);
+        System.out.println(numbers);
         System.out.println("Elements in PriorityQueue: ");
-        while (!queue.isEmpty()) {
-            System.out.println(queue.poll());
+        while (!numbers.isEmpty()) {
+            System.out.println(numbers.poll());
         }
     }
 }
