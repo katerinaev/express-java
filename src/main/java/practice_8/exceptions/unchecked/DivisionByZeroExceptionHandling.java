@@ -6,7 +6,7 @@ public class DivisionByZeroExceptionHandling {
     }
     public static void divisionWithCheck(int numerator, int denominator) {
         try {
-            double result = numerator / denominator;
+            double result = (double) numerator / denominator;
             System.out.println("Quotient: " + result);
         } catch (ArithmeticException e) {
             System.err.println("Attempt to divide by zero: " + e.getMessage());
